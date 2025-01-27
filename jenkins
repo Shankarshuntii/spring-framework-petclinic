@@ -1,9 +1,11 @@
 node	{
     def app
-tools{
-	'jdk11'
-	'maven3'
-}
+ tools{
+        jdk 'jdk11'
+        maven 'maven3'
+        
+    }
+
 
     stage('Clone repository') {
         checkout scm
