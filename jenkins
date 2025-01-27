@@ -13,9 +13,9 @@ node	{
         }
 	
     stage('Build image with Docker') {
-        dir('shankarshuntii/spring-framework-petclinic') {
+        
             app = docker.build("dukaan:${env.BUILD_NUMBER}")
 	    sh "docker ps"
-        }
+        
     }
 }
