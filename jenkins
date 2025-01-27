@@ -8,7 +8,7 @@ node	{
 
         stage("Package jar file with Maven"){
           
-                sh "mvn clean package -DskipTests"
+                sh "mvn clean package -DskipTests=true"
             
         }
 	
